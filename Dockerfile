@@ -1,4 +1,4 @@
-FROM php:5-apache
+FROM php:7-apache
 MAINTAINER Nicolas Steinmetz <public+docker@steinmetz.fr>
 ADD https://github.com/getgrav/grav/releases/download/1.0.10/grav-admin-v1.0.10.zip /tmp/grav-admin-v1.0.10.zip
 RUN apt update && \
@@ -25,8 +25,8 @@ RUN apt update && \
     docker-php-ext-install zip && \
     docker-php-ext-install xml && \
     docker-php-ext-install curl && \
-    pecl install yaml && \
-    docker-php-ext-enable yaml && \
+    #pecl install yaml && \
+    #docker-php-ext-enable yaml && \
     ln -s /usr/src/php/ext/openssl/config0.m4 /usr/src/php/ext/openssl/config.m4 && \
     docker-php-ext-install openssl && \
     #docker-php-ext-install -j$(nproc) iconv mcrypt && \
