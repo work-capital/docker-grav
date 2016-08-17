@@ -1,6 +1,6 @@
 FROM php:7-apache
 MAINTAINER Nicolas Steinmetz <public+docker@steinmetz.fr>
-ADD https://github.com/getgrav/grav/releases/download/1.0.10/grav-admin-v1.0.10.zip /tmp/grav-admin-v1.0.10.zip
+ADD https://github.com/getgrav/grav/releases/download/1.1.3/grav-admin-v1.1.3.zip /tmp/grav-admin-v1.1.3.zip
 RUN apt update && \
     apt upgrade -y && \
     apt install -y \
@@ -17,7 +17,7 @@ RUN apt update && \
 	libyaml-dev \
         libssl-dev \
         openssl && \
-    unzip /tmp/grav-admin-v1.0.10.zip -d /tmp/ && \
+    unzip /tmp/grav-admin-v1.1.3.zip -d /tmp/ && \
     mv /tmp/grav-admin/* /var/www/html/ && \
     mv /tmp/grav-admin/.htaccess /var/www/html/ && \
     chown www-data:www-data -R /var/www/html && \
