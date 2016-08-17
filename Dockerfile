@@ -24,7 +24,7 @@ RUN apt update && \
     docker-php-ext-install mbstring && \
     docker-php-ext-install zip && \
     docker-php-ext-install xml && \
-    docker-php-ext-install curl && \
+    #docker-php-ext-install curl && \
     #pecl install yaml && \
     #docker-php-ext-enable yaml && \
     ln -s /usr/src/php/ext/openssl/config0.m4 /usr/src/php/ext/openssl/config.m4 && \
