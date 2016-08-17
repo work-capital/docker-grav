@@ -23,7 +23,7 @@ RUN apt update && \
     chown www-data:www-data -R /var/www/html && \
     docker-php-ext-install mbstring && \
     docker-php-ext-install zip && \
-    docker-php-ext-install xml && \
+    #docker-php-ext-install xml && \
     #docker-php-ext-install curl && \
     #pecl install yaml && \
     #docker-php-ext-enable yaml && \
