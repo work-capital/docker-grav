@@ -19,4 +19,6 @@ RUN apt update && \
     docker-php-ext-install -j$(nproc) gd &&\
     docker-php-ext-install -j$(nproc) zip &&\
     a2enmod rewrite && \
-    rm -rf /var/lib/apt/lists/* 
+    rm -rf /var/lib/apt/lists/*
+COPY php.conf /etc/apache2/conf-enabled/ 
+COPY server-signature.conf /etc/apache2/conf-enabled/ 
