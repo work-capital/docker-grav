@@ -6,6 +6,7 @@ Basic Dockerfile based on  php:7-apache & grav with admin panel
 
 ## Changelog ##
 
+* 20161214 : Upgrade to Grav 1.1.9
 * 20161030 : Upgrade to Grav 1.1.8
 * 20160817 : Upgrade to Grav 1.1.3
 * 20160405 : Upgrade to PHP:7-apache
