@@ -1,11 +1,14 @@
 # DOCKER-GRAV #
 
+...DISCONTINUED ...
+
 ## Overview ##
 
 Basic Dockerfile based on  php:7-apache & grav with admin panel
 
 ## Changelog ##
 
+* 20170103 : Upgrade to Grav 1.1.12
 * 20161214 : Upgrade to Grav 1.1.9
 * 20161030 : Upgrade to Grav 1.1.8
 * 20160817 : Upgrade to Grav 1.1.3
