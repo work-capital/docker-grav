@@ -1,13 +1,11 @@
-# DOCKER-GRAV #
-
-...DISCONTINUED ...
+Fork of https://github.com/nsteinmetz/docker-grav
 
 ## Overview ##
 
 Basic Dockerfile based on  php:7-apache & grav with admin panel
 
 ## Changelog ##
-
+* 20170228 : Upgrade to Grav 1.1.17
 * 20170103 : Upgrade to Grav 1.1.12
 * 20161214 : Upgrade to Grav 1.1.9
 * 20161030 : Upgrade to Grav 1.1.8
@@ -18,5 +16,5 @@ Basic Dockerfile based on  php:7-apache & grav with admin panel
 ## Use it ##
 
 ```
-docker run -d -p 8080:80 nsteinmetz/grav
+docker run -d -p 8080:80 jimtim/grav
 ```
