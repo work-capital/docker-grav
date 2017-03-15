@@ -1,6 +1,6 @@
 FROM php:7-apache
 MAINTAINER Tim Friedrich <info@jimtim.de>
-ADD https://github.com/getgrav/grav/releases/download/1.2.0-rc.1/grav-v1.2.0-rc.1.zip /tmp/grav-admin.zip
+ADD https://github.com/getgrav/grav/releases/download/1.2.0-rc.1/grav-v1.2.0-rc.1.zip /tmp/grav-v1.2.0-rc.1.zip
 RUN apt update && \
     apt upgrade -y && \
     apt install -y \
@@ -10,7 +10,7 @@ RUN apt update && \
         libmcrypt-dev \
         libpng12-dev \
         pkg-config && \
-    unzip /tmp/grav-admin.zip -d /tmp/ && \
+    unzip /tmp/grav-v1.2.0-rc.1.zip -d /tmp/ && \
     mv /tmp/grav-admin/* /var/www/html/ && \
     mv /tmp/grav-admin/.htaccess /var/www/html/ && \
     chown www-data:www-data -R /var/www/html && \
