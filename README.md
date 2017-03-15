@@ -5,6 +5,7 @@ Fork of https://github.com/nsteinmetz/docker-grav
 Basic Dockerfile based on  php:7-apache & grav with admin panel
 
 ## Changelog ##
+* 20170315 : Upgrade to Grav 1.2.0-rc.1
 * 20170228 : Upgrade to Grav 1.1.17
 * 20170103 : Upgrade to Grav 1.1.12
 * 20161214 : Upgrade to Grav 1.1.9
