@@ -1,6 +1,6 @@
 FROM php:7-apache
 MAINTAINER Tim Friedrich <info@jimtim.de>
-ADD https://github.com/getgrav/grav/releases/download/1.2.0-rc.1/grav-admin-v1.2.0-rc.1.zip /tmp/grav-admin-v1.2.0-rc.1.zip
+ADD https://github.com/getgrav/grav/releases/download/1.2.0-rc.1/grav-admin-v1.2.0-rc.2.zip /tmp/grav-admin-v1.2.0-rc.2.zip
 RUN apt update && \
     apt upgrade -y && \
     apt install -y \
@@ -10,7 +10,7 @@ RUN apt update && \
         libmcrypt-dev \
         libpng12-dev \
         pkg-config && \
-    unzip /tmp/grav-admin-v1.2.0-rc.1.zip -d /tmp/ && \
+    unzip /tmp/grav-admin-v1.2.0-rc.2.zip -d /tmp/ && \
     mv /tmp/grav-admin/* /var/www/html/ && \
     mv /tmp/grav-admin/.htaccess /var/www/html/ && \
     chown www-data:www-data -R /var/www/html && \
@@ -20,5 +20,5 @@ RUN apt update && \
     docker-php-ext-install -j$(nproc) zip &&\
     a2enmod rewrite && \
     rm -rf /var/lib/apt/lists/*
-COPY php.conf /etc/apache2/conf-enabled/ 
-COPY server-signature.conf /etc/apache2/conf-enabled/ 
+COPY php.conf /etc/apache2/conf-enabled/
+COPY server-signature.conf /etc/apache2/conf-enabled/
