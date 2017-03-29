@@ -18,5 +18,5 @@ Basic Dockerfile based on  php:7-apache & grav with admin panel
 ## Use it ##
 
 ```
-docker run -d -p 8080:80 jimtim/grav
+docker run -d -p 8080:80 grav:1.1.7
 ```
